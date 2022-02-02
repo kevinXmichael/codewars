@@ -1,0 +1,15 @@
+{
+  "author": "Kevin Michael Schott",
+  "name": "codewars",
+  "version": "0.0.1",
+  "description": "I will collect all my solutions for CodeWars in here.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "engines": {
+    "node": ">= 14"
+  }
+}
