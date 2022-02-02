@@ -7,14 +7,14 @@
 // Courtesy of projecteuler.net (Problem 1)
 
 function solution(number) {
-  const numbers = [];
+  const numbers = []
   for (let i = 0; i < number; i++) {
     if (i % 3 === 0 || i % 5 === 0) {
-      numbers.push(i);
-      continue;
+      numbers.push(i)
+      continue
     }
   }
-  let sum = 0;
-  numbers.forEach((num) => (sum += num));
-  return sum;
+  let sum = 0
+  numbers.forEach((num) => (sum += num))
+  return sum
 }
