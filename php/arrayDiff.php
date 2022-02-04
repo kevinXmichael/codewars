@@ -15,10 +15,7 @@
 
 <?php
 function arrayDiff($a, $b) {
-//    return array_values(array_diff($a, $b));
-    return array_values(array_filter($a, function ($var) use ($b) {
-        return !in_array($var, $b);
-    }));
+    return array_values(array_filter($a, fn ($var) => !in_array($var, $b)));
 }
 ?>
 </body>
