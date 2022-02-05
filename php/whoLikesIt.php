@@ -19,10 +19,38 @@
 <?php
 function likes($names)
 {
-    $horn = 5;
+    switch (count($names)) {
+        case 0:
+            return "no one likes this";
+        case 1:
+            return $names[0] . " likes this";
+        case 2:
+            return $names[0] . " and " . $names[1] . " like this";
+        case 3:
+            return $names[0] . ", " . $names[1] . " and " . $names[2] . " like this";
+        default:
+            return $names[0] . ", " . $names[1] . " and " . (count($names) - 2) . " others like this";
+    }
 }
 
-echo findShort("bitcoin take over the world maybe who knows perhaps");
+// CodeWars does not like the match expression as this task does only provide PHPv7
+//    return match (count($names)) {
+//        0 => "no one likes this",
+//        1 => $names[0] . " likes this",
+//        2 => $names[0] . " and " . $names[1] . " like this",
+//        3 => $names[0] . ", " . $names[1] . " and " . $names[2] . " like this",
+//        default => $names[0] . ", " . $names[1] . " and " . (count($names) - 2) . " others like this",
+//    };
+
+// This is another very smart solution for this problem:
+//function likes($names): string {
+//    return array(
+//        '0' => "no one likes this",
+//        '1' => "{$names[0]} likes this",
+//        '2' => "{$names[0]} and {$names[1]} like this",
+//        '3' => "{$names[0]}, {$names[1]} and {$names[2]} like this",
+//        '4' => "{$names[0]}, {$names[1]} and ". (sizeof($names) - 2) ." others like this")[min(4, sizeof($names))];
+//}
 ?>
 </body>
 </html>
