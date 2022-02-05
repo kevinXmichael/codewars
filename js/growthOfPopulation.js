@@ -13,10 +13,10 @@
 
 // p0, percent, aug (inhabitants coming or leaving each year), p (population to surpass)
 function nbYear(p0, percent, aug, p) {
-  let yearsPassed = 0
-  while (p0 < p) {
-    p0 += p0 * (percent / 100) + aug
-    yearsPassed++
-  }
-  return yearsPassed
+    let yearsPassed = 0
+    while (p0 < p) {
+        p0 += p0 * (percent / 100) + aug
+        yearsPassed++
+    }
+    return yearsPassed
 }

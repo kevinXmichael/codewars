@@ -1,7 +1,8 @@
 <html lang="en">
 <body>
 <small>
-    Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+    Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the
+    result.
 
     It should remove all values from list a, which are present in list b keeping their order.
 
@@ -14,9 +15,11 @@
 <br>
 
 <?php
-function arrayDiff($a, $b) {
-    return array_values(array_filter($a, fn ($var) => !in_array($var, $b)));
+function arrayDiff($a, $b)
+{
+    return array_values(array_filter($a, fn($var) => !in_array($var, $b)));
 }
+
 ?>
 </body>
 </html>
