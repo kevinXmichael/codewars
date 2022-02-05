@@ -29,7 +29,8 @@
 <br>
 
 <?php
-function bouncingBall($height, $bounce, $window) {
+function bouncingBall($height, $bounce, $window)
+{
     $conditions = ($height > 0) && ($bounce > 0) && ($bounce < 1) && ($height > $window);
     if ($conditions) {
         $count = 0;
@@ -44,6 +45,7 @@ function bouncingBall($height, $bounce, $window) {
     }
     return -1;
 }
+
 ?>
 </body>
 </html>

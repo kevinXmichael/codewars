@@ -12,7 +12,8 @@
 //    return min(array_map('strlen', (explode(' ', $str))));
 //}
 
-function findShort($str){
+function findShort($str)
+{
     $smallest = PHP_INT_MAX;
     $words = explode(" ", $str);
     foreach ($words as $word) {

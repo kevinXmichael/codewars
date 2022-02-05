@@ -5,22 +5,22 @@
 // uniqueInOrder([1, 2, 2, 3, 3]) == [1, 2, 3];
 
 var uniqueInOrder = function (iterable) {
-  //your code here - remember iterable can be a string or an array
-  if (typeof iterable === "string") {
-    iterable = iterable.split("")
-  }
-
-  const result = []
-  for (let index = 0; index < iterable.length; index++) {
-    const currentElement = iterable[index]
-    if (result.length > 0) {
-      const lastElement = result[result.length - 1]
-      if (currentElement !== lastElement) {
-        result.push(currentElement)
-      }
-    } else {
-      result.push(currentElement)
+    //your code here - remember iterable can be a string or an array
+    if (typeof iterable === "string") {
+        iterable = iterable.split("")
     }
-  }
-  return result
+
+    const result = []
+    for (let index = 0; index < iterable.length; index++) {
+        const currentElement = iterable[index]
+        if (result.length > 0) {
+            const lastElement = result[result.length - 1]
+            if (currentElement !== lastElement) {
+                result.push(currentElement)
+            }
+        } else {
+            result.push(currentElement)
+        }
+    }
+    return result
 }

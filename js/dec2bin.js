@@ -8,6 +8,6 @@
 // 5, 9 --> "1110" (5 + 9 = 14 in decimal or 1110 in binary)
 
 function addBinary(a, b) {
-  //   return ((a + b) >>> 0).toString(2)
-  return Number(a + b).toString(2)
+    //   return ((a + b) >>> 0).toString(2)
+    return Number(a + b).toString(2)
 }
