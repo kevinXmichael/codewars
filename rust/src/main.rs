@@ -1,9 +1,10 @@
 // mod test;
 // mod create_phone_num;
 // mod digital_root;
-mod largest_five_digit_number;
+// mod largest_five_digit_number;
+mod get_middle;
 
 fn main() {
-    let result = largest_five_digit_number::largest_five_digit_number("1234567890");
-    println!("The result is: {} === {}", result, 67890);
+    let result = get_middle::get_middle("test");
+    println!("The result is: {}", result);
 }
