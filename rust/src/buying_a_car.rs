@@ -1,6 +1,6 @@
 pub fn nb_months(old_: i32, new_: i32, saving_: i32, loss_percent_: f64) -> (i32, i32) {
     let decrease_per_month: f64 = 0.5f64;
-    let mut loss_percent :f64 = loss_percent_ as f64;
+    let mut loss_percent: f64 = loss_percent_ as f64;
     let mut old: f64 = old_ as f64;
     let mut new: f64 = new_ as f64;
     let mut saving: f64 = 0.0f64;

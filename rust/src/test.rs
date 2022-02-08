@@ -12,5 +12,7 @@ impl Human {
 pub fn run() {
     let kevin = Human { age: 26, name: String::from("Kevin M. Schott") };
     kevin.hello();
+
+    println!("{} __ {}", 'f' as u32, 'g' as u32);
 }
 
