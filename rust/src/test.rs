@@ -1,8 +1,16 @@
-// pub fn run() {
-//     let vec: Vec<i32> = Vec::new();
-//     let n = 10;
-//     match vec.get(n) {
-//         Some(el) => println!("The {}th element is: {}.", n, el),
-//         None => println!("There is no {}th element.", n)
-//     }
-// }
+struct Human {
+    age: i32,
+    name: String
+}
+
+impl Human {
+    fn hello(&self) {
+        println!("{} ({}) says hello!", self.name, self.age);
+    }
+}
+
+pub fn run() {
+    let kevin = Human { age: 26, name: String::from("Kevin M. Schott") };
+    kevin.hello();
+}
+
