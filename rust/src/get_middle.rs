@@ -1,3 +1,13 @@
+pub fn get_middle(s:&str) -> &str {
+    let is_odd = s.len() % 2 != 0;
+    let middle = s.len() / 2;
+    if is_odd {
+        &s[middle..middle+1]
+    } else {
+        &s[middle-1..middle+1]
+    }
+}
+
 // You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
 
 // #Examples:
@@ -16,13 +26,3 @@
 // #Output
 
 // The middle character(s) of the word represented as a string.
-
-pub fn get_middle(s:&str) -> &str {
-    let is_odd = s.len() % 2 != 0;
-    let middle = s.len() / 2;
-    if is_odd {
-        &s[middle..middle+1]
-    } else {
-        &s[middle-1..middle+1]
-    }
-}

@@ -1,3 +1,8 @@
+pub fn create_phone_number(numbers: &[u8]) -> String {
+    let s: String = numbers.into_iter().map(|i| i.to_string()).collect();
+    format!("({}) {}-{}", &s[..3], &s[3..6], &s[6..])
+}
+
 // Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
 
 // Example
@@ -20,10 +25,3 @@
 //     result.push_str(&(format!("-{}", slice_to_str(&numbers[6..10]))));
 //     return result;
 // }
-
-// OR super smart solution:
-
-pub fn create_phone_number(numbers: &[u8]) -> String {
-    let s: String = numbers.into_iter().map(|i| i.to_string()).collect();
-    format!("({}) {}-{}", &s[..3], &s[3..6], &s[6..])
-}
