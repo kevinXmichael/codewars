@@ -6,12 +6,11 @@
 // mod mexican_wave;
 // mod odd_or_even;
 // mod buying_a_car;
-mod highest_scoring_word;
+// mod highest_scoring_word;
+mod int32_to_ipv4;
 
 fn main() {
-    let mut result = highest_scoring_word::high("what time are we climbing up the volcano"); // volcano
-    // let mut result = highest_scoring_word::high("abcdefghijklmnopqrstuvwxyz"); // volcano
-    println!("The result is: {:?}", result);
-
+    let result = int32_to_ipv4::int32_to_ip(2154959208); // 128.114.17.104
+    println!("The result is: {}", result);
     // test::run();
 }
