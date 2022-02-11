@@ -8,3 +8,4 @@ package-lock.json
 *.lock
 .env
 **/target
+venv
