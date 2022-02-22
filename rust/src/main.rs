@@ -1,10 +1,9 @@
 // mod test;
-mod encrypt_this;
+mod weight_for_weight;
 
 fn main() {
     // test::run();
 
-    // let result = encrypt_this::encrypt_this("test me");
-    let result = encrypt_this::encrypt_this("test me");
-    println!("The result is: '{}'", result);
+    let result = weight_for_weight::order_weight("103 123 4444 99 2000");
+    println!("The result is: {} === {}?", result, "2000 103 123 4444 99");
 }
